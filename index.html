@@ -1,7 +1,3 @@
-<html>
-  <head>
-    <title>time</title>
-  </head>
 <body onload="updateTimeZone()">
 
     <div id="ConversionResultsDIV"></div> 
@@ -223,16 +219,6 @@
       
     </form>
     <script>
-      var d = new Date();
-     
-     var date = d.getDate();
-    
-     var month = d.getMonth() + 1; // Since getMonth() returns month from 0-11 not 1-12
-     var year = d.getFullYear();
-      
-     var dateStr = year + "/" + month + "/" + date;
-     
-     
     var timeDiff;
           var selectedCity;
           var daylightSavingsAdjust = 0;
@@ -242,7 +228,6 @@
             timeDiff = lstCity.options[lstCity.selectedIndex].value;
             selectedCity = lstCity.options[lstCity.selectedIndex].text;
             updateTime();
-            
           }
           
           function getTimeString(dateObject){
@@ -251,12 +236,10 @@
             if(hours < 10){
               hours = "0" + hours;
             }
-           
             
             var minutes = dateObject.getMinutes();
             if(minutes<10){
               minutes = "0" + minutes;
-              
             }
             
             var seconds = dateObject.getSeconds();
@@ -264,23 +247,20 @@
               seconds ="0" + seconds;
             }
             
-
-            timeString = year +":"+month+":"+date+" "+hours + ":" + minutes + ":" + seconds;
+            timeString = hours + ":" + minutes + ":" + seconds;
             return timeString;
           }
             
           function updateTime(){
-        
             var nowTime = new Date();
-            var resultsText = "<p>A helyi idő Magyarországon: " +getTimeString(nowTime) + "</p>";
+            var resultsText = "<p>A helyi idő Magyarországon: " + getTimeString(nowTime) + "</p>";
             
-            nowTime.setMinutes(d.getFullYear()+d.getMonth()+d.getDate() + nowTime.getMinutes() + nowTime.getTimezoneOffset() + parseInt(timeDiff) + daylightSavingsAdjust);
+            nowTime.setMinutes(nowTime.getMinutes() + nowTime.getTimezoneOffset() + parseInt(timeDiff) + daylightSavingsAdjust);
             
             resultsText += "<p>" + selectedCity + " a válaszotott helyi idő: "+getTimeString(nowTime) 
             + "</p>";
             
             document.getElementById("ConversionResultsDIV").innerHTML = resultsText;
-            document.getElementById("demo").innerHTML = d;
           }
           
           function chkDaylightSaving_onclick(){
@@ -297,4 +277,4 @@
         </script>
         
     </body>
-    </html>
+ 
