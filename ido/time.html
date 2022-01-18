@@ -1,0 +1,280 @@
+<body onload="updateTimeZone()">
+
+    <div id="ConversionResultsDIV"></div> 
+    
+    <form name="form1"> 
+      <select size="5" name="lstCity" onchange="updateTimeZone();"> 
+        <option value="-720" selected>Nemzetközi dátumválasztó vonal-nyugat
+        <option value="-660" selected>Egyezményes világidő -11
+        <option value="-600" selected>Aleut Szigetek
+        <option value="-600" selected>Hawaii
+        <option value="-570" selected>Marquises szigetek
+        <option value="-540" selected>Alaszka
+        <option value="-540" selected>Egyezményes világidő -09
+        <option value="-480" selected>California
+        <option value="-480" selected>Csendes óceáni idő(Kanada és USA)
+        <option value="-480" selected>Egyezményes világidő -08
+        <option value="-480" selected>Arizona
+       <option value="-480" selected> Chihuahua
+       <option value="-480" selected>La Paz
+       <option value="-480" selected>Mazatlan
+       <option value="-480" selected>USA Hegyi idő
+        <option value="-360" selected>USA középidő
+         <option value="-360" selected>Guadalajara
+          <option value="-360" selected>Mexikóváros
+           <option value="-360" selected>Monterrey
+            <option value="-360" selected>Húsvétsziget
+             <option value="-360" selected>Közép-Amerika
+             <option value="-360" selected>Saskatchewan
+            <option value="-300" selected>Bogota
+             <option value="-300" selected>Lima
+              <option value="-300" selected>Quito,
+               <option value="-300" selected>Rio Branco
+                <option value="-300" selected>Chetumal
+                 <option value="-300" selected>Haiti
+                  <option value="-300" selected>Havana
+                   <option value="-300" selected>Indiana(kelet)
+     <option value="-300" selected>Keleti idő
+      <option value="-300" selected>Turks és Caicos szigetek
+       <option value="-240" selected>Asuncion
+       <option value="-240" selected>Atlanti-óceáni idő
+       <option value="-240" selected>Caracas
+       <option value="-240" selected>Guiaba
+       <option value="-240" selected>Georgetown
+       <option value="-240" selected>La Paz
+       <option value="-240" selected>San Juan
+       <option value="-240" selected>Santiago
+       <option value="-210" selected>Újfundland
+       <option value="-180" selected>Araguiana
+        <option value="-180" selected>Brazíliaváros
+         <option value="-180" selected>Buenos Aires
+          <option value="-180" selected>Cayenne
+          <option value="-180" selected>Fortaleza
+          <option value="-180" selected>Grönland
+          <option value="-180" selected>Montevideo
+          <option value="-180" selected>Punta Arenas
+          <option value="-180" selected>Saint Pierre és Miquelon
+          <option value="-180" selected>Salvador
+          <option value="-120" selected>Egyezményes világidő-02
+          <option value="-60" selected>Azori-szigetek
+          <option value="-60" selected>Cabo Verde
+          <option value="0" selected>Egyezményes világidő
+          <option value="0" selected>Dublin
+          <option value="0" selected>Edinburg
+          <option value="0" selected>London
+          <option value="0" selected>Lisszabon
+          <option value="0" selected>Monrovia
+          <option value="0" selected>Reykjavik
+          <option value="0" selected>Sao Tomé
+          <option value="+60" selected>Cassablanca
+          <option value="+60" selected>Amszterdam
+          <option value="+60" selected>Bécs
+          <option value="+60" selected>Berlin
+          <option value="+60" selected>Bern
+          <option value="+60" selected>Róma
+          <option value="+60" selected>Stockholm
+          <option value="+60" selected>Brüsszel
+          <option value="+60" selected>Koppenhága
+          <option value="+60" selected>Madrid
+          <option value="+60" selected>Párizs
+          <option value="+60" selected>Budapest
+          <option value="+60" selected>Belgrád
+          <option value="+60" selected>Ljujbana
+          <option value="+60" selected>Pozsony
+          <option value="+60" selected>Prága
+          <option value="+60" selected>Nyugat-Közép-Afrika
+          <option value="+60" selected>Szarajevó
+          <option value="+60" selected>Szkopje
+          <option value="+60" selected>Vasró
+          <option value="+60" selected>Zágráb
+          <option value="+120" selected>Amman
+           <option value="+120" selected>Athén
+            <option value="+120" selected>Bukarest
+             <option value="+120" selected>Bejrút
+              <option value="+120" selected>Chisinau
+               <option value="+120" selected>Damaszkusz
+                <option value="+120" selected>Gáza
+                 <option value="+120" selected>Hebron
+                  <option value="+120" selected>Harare
+                   <option value="+120" selected>Pretoria
+                    <option value="+120" selected>Helinski
+                     <option value="+120" selected>Kijev
+                      <option value="+120" selected>Riga
+                       <option value="+120" selected>Szófia
+                        <option value="+120" selected>Talinn
+                         <option value="+120" selected>Vilinus
+                          <option value="+120" selected>Jeruzsálem
+     <option value="+120" selected>Juba
+      <option value="+120" selected>Kairó
+       <option value="+120" selected>Kalinyingrád
+        <option value="+120" selected>Kartúm
+         <option value="+120" selected>Tripoli
+         <option value="+120" selected>Windhoek
+          <option value="+180" selected>Bagdad
+          <option value="+180" selected>Isztambul
+          <option value="+180" selected>Kuvait
+          <option value="+180" selected>Rijád
+          <option value="+180" selected>Minszk
+          <option value="+180" selected>Moszkva,Szentpétervár
+          <option value="+180" selected>Nairobi
+          <option value="+180" selected>Volgográd
+          <option value="+210" selected>Teherán
+          <option value="+240" selected>Abu-Dzabi
+          <option value="+240" selected>Maszkat
+          <option value="+240" selected>Asztahán
+          <option value="+240" selected>Uljanovszk
+          <option value="+240" selected>Baku
+          <option value="+240" selected>Izsevszk
+          <option value="+240" selected>Szamara
+          <option value="+240" selected>Jereván
+          <option value="+240" selected>Port Louis
+          <option value="+240" selected>Szaratov
+          <option value="+240" selected>Tbiliszi
+          <option value="+270" selected>Kabul
+          <option value="+300" selected>Asgabat
+           <option value="+300" selected>Taskent
+            <option value="+300" selected>Iszlámbád
+             <option value="+300" selected>Karacsi
+              <option value="+300" selected>Jekatyerinburg
+               <option value="+300" selected>Kizilorda
+                <option value="+330" selected>Chennai
+                 <option value="+330" selected>Kolkata
+                 <option value="+330" selected>Mumbai
+                 <option value="+330" selected>Új-Delhi
+                 <option value="+330" selected>Kotte
+                 <option value="+345" selected>Katamandu
+                 <option value="+360" selected>Asztana
+                 <option value="+360" selected>Dakka
+                 <option value="+360" selected>Omszk
+                 <option value="+390" selected>Yangon(Rangun)
+                 <option value="+420" selected>Bangkok
+                 <option value="+420" selected>Dzsakarta
+                 <option value="+420" selected>Hanoi
+                 <option value="+420" selected>Barnaul
+                 <option value="+420" selected>Gorno-Altajszk
+                 <option value="+420" selected>Hovd
+                 <option value="+420" selected>Krasznojarszk
+                 <option value="+420" selected>Novoszibirszk
+                 <option value="+420" selected>Tomszk
+                 <option value="+480" selected>Irkutszk
+                 <option value="+480" selected>Kuala Lumpur
+                 <option value="+480" selected>Szingapúr
+                 <option value="+480" selected>Peking
+                 <option value="+480" selected>Csungking
+                 <option value="+480" selected>Hongkong
+                 <option value="+480" selected>Urumcsi
+                 <option value="+480" selected>Perth
+                 <option value="+480" selected>Tajpej
+                 <option value="+480" selected>Ulánbátor
+                 <option value="+525" selected>Eucla
+                 <option value="+540" selected>Csita
+                 <option value="+540" selected>Jakutszk
+                 <option value="+540" selected>Oszaka
+                 <option value="+540" selected>Szapporo
+                 <option value="+540" selected>Tokió
+                 <option value="+540" selected>Phenjan
+                 <option value="+540" selected>Szöul
+                 <option value="+570" selected>Adelaide
+                 <option value="+570" selected>Darwin
+                 <option value="+600" selected>Brisbane
+                 <option value="+600" selected>Canberra
+                 <option value="+600" selected>Melbourne
+                 <option value="+600" selected>Sydney
+                 <option value="+600" selected>Guam
+                 <option value="+600" selected>Port Moresby
+                 <option value="+600" selected>Hobart
+                 <option value="+600" selected>Vlagyivosztok
+                 <option value="+630" selected>Lord Howe-sziget
+                 <option value="+660" selected>Csokurdah
+                 <option value="+660" selected>Magadán
+                 <option value="+660" selected>Norfolk-sziget
+                 <option value="+660" selected>Salamon-szigetek
+                 <option value="+660" selected>Új-Kaledónia
+                 <option value="+660" selected>Szahalin
+                 <option value="+720" selected>Anadir
+                 <option value="+720" selected>Petropavloszki-Kamcsatkszkij
+      <option value="+720" selected>Auckland
+      <option value="+720" selected>Wellington
+      <option value="+720" selected>Egyezményes világidő +12
+      <option value="+720" selected>Fidzsi-szigetek
+      <option value="+765" selected>Chatham-szigetek
+      <option value="+780" selected>Egyezményes világidő +13
+      <option value="+780" selected>Nuku'alofa
+      <option value="+780" selected>Szamoa
+      <option value="+780" selected>Kiritimati-sziget
+             
+          
+           
+            
+          </option>
+          
+       
+        
+             
+        
+          
+        
+        
+      </select> 
+      
+    </form>
+    <script>
+    var timeDiff;
+          var selectedCity;
+          var daylightSavingsAdjust = 0;
+          
+          function updateTimeZone(){
+            var lstCity = document.form1.lstCity;
+            timeDiff = lstCity.options[lstCity.selectedIndex].value;
+            selectedCity = lstCity.options[lstCity.selectedIndex].text;
+            updateTime();
+          }
+          
+          function getTimeString(dateObject){
+            var timeString;
+            var hours = dateObject.getHours();
+            if(hours < 10){
+              hours = "0" + hours;
+            }
+            
+            var minutes = dateObject.getMinutes();
+            if(minutes<10){
+              minutes = "0" + minutes;
+            }
+            
+            var seconds = dateObject.getSeconds();
+            if(seconds<10){
+              seconds ="0" + seconds;
+            }
+            
+            timeString = hours + ":" + minutes + ":" + seconds;
+            return timeString;
+          }
+            
+          function updateTime(){
+            var nowTime = new Date();
+            var resultsText = "<p>A helyi idő Magyarországon: " + getTimeString(nowTime) + "</p>";
+            
+            nowTime.setMinutes(nowTime.getMinutes() + nowTime.getTimezoneOffset() + parseInt(timeDiff) + daylightSavingsAdjust);
+            
+            resultsText += "<p>" + selectedCity + " a válaszotott helyi idő: "+getTimeString(nowTime) 
+            + "</p>";
+            
+            document.getElementById("ConversionResultsDIV").innerHTML = resultsText;
+          }
+          
+          function chkDaylightSaving_onclick(){
+            if(document.form1.chkDaylightSaving.checked){
+              daylightSavingsAdjust = 60;
+            }
+            
+            else{
+              daylightSavingsAdjust = 0;
+            }
+            
+            updateTime(); 
+          }
+        </script>
+        
+    </body>
+ 
