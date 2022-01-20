@@ -1,18 +1,21 @@
 <html>
 <head>
 <style>
+  div.a {
+  font-size: 30px;
+}
 body  {
   background-image: url("paper.jpg");
   background-color: #cccccc;
 }
 </style>
 </head>
-<body onload="updateTimeZone()">
+<body style="text-align: center;"  onload="updateTimeZone()">
 
-    <div id="ConversionResultsDIV"></div> 
+    <div class="a" style="text-align: center;" id="ConversionResultsDIV"></div> 
     
     <form name="form1"> 
-      <select size="5" name="lstCity" onchange="updateTimeZone();"> 
+      <select size="30" name="lstCity" onchange="updateTimeZone();"> 
         <option value="-720" selected>Nemzetközi dátumválasztó vonal-nyugat
         <option value="-660" selected>Egyezményes világidő -11
         <option value="-600" selected>Aleut Szigetek
