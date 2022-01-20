@@ -262,11 +262,11 @@ body  {
             
           function updateTime(){
             var nowTime = new Date();
-            var resultsText = "<p style="text-align: center;">A helyi idő Magyarországon: " + getTimeString(nowTime) + "</p>";
+            var resultsText = "<p>A helyi idő Magyarországon: " + getTimeString(nowTime) + "</p>";
             
             nowTime.setMinutes(nowTime.getMinutes() + nowTime.getTimezoneOffset() + parseInt(timeDiff) + daylightSavingsAdjust);
             
-            resultsText += "<p style="text-align: center;">" + selectedCity + " a válaszotott helyi idő: "+getTimeString(nowTime) 
+            resultsText += "<p>" + selectedCity + " a válaszotott helyi idő: "+getTimeString(nowTime) 
             + "</p>";
             
             document.getElementById("ConversionResultsDIV").innerHTML = resultsText;
